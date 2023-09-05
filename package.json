@@ -1,6 +1,6 @@
 {
   "name": "imageproject",
-  "version": "1.0",
+  "version": "2.01",
   "main": "dist-electron/main/index.js",
   "description": "Electron Vite React boilerplate.",
   "license": "MIT",

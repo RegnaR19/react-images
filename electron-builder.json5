@@ -37,7 +37,7 @@
   },
   "publish": {
     owner: 'RegnaR19',
-    repo: 'Image Project',
+    repo: 'react-images',
     provider: 'github',
     releaseType: 'release',
     "url": "https://github.com/RegnaR19/react-images"
