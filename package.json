@@ -1,0 +1,64 @@
+{
+  "name": "imageproject",
+  "version": "1.01",
+  "main": "dist-electron/main/index.js",
+  "description": "Electron Vite React boilerplate.",
+  "license": "MIT",
+  "private": false,
+  "author": "R19", 
+  "debug": {
+    "env": {
+      "VITE_DEV_SERVER_URL": "http://127.0.0.1:7777/"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build && electron-builder",
+    "preview": "vite preview",
+    "publish": "tsc && vite build && electron-builder -p always",
+    "pree2e": "vite build --mode=test",
+    "e2e": "playwright test"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@mantine/carousel": "^6.0.19",
+    "@mantine/core": "^6.0.19",
+    "@mantine/dates": "^6.0.19",
+    "@mantine/dropzone": "^6.0.19",
+    "@mantine/form": "^6.0.19",
+    "@mantine/hooks": "^6.0.19",
+    "@mantine/modals": "^6.0.19",
+    "@mantine/notifications": "^6.0.19",
+    "@mantine/nprogress": "^6.0.19",
+    "@mantine/prism": "^6.0.19",
+    "@mantine/spotlight": "^6.0.19",
+    "@mantine/tiptap": "^6.0.19",
+    "@tabler/icons-react": "^2.32.0",
+    "@tiptap/extension-link": "^2.1.7",
+    "@tiptap/react": "^2.1.7",
+    "@tiptap/starter-kit": "^2.1.7",
+    "dayjs": "^1.11.9",
+    "electron-updater": "^6.1.1",
+    "embla-carousel-react": "^8.0.0-rc12",
+    "tailwindcss": "^3.3.3",
+    "vite-plugin-electron": "0.13.0-beta.3",
+    "yarn": "^1.22.19"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.37.1",
+    "@types/react": "^18.2.20",
+    "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react": "^4.0.4",
+    "electron": "^26.0.0",
+    "electron-builder": "^24.6.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.66.1",
+    "typescript": "^5.1.6",
+    "vite": "^4.4.9",
+    "vite-plugin-electron-renderer": "^0.14.5"
+  },
+  "engines": {
+    "node": "^14.18.0 || >=16.0.0"
+  }
+}
